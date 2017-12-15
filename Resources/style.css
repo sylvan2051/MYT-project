@@ -1,0 +1,165 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   flex: auto;
+
+}
+body {
+   display: flex;
+   flex: inherit;
+   
+}
+
+/*Header*/
+
+.headwrapper {
+   position: fixed;
+   z-index: 20;
+   background-color: white;
+   width: 100%;
+   padding: 10px;
+   top: 0px;
+   left: 0px
+}
+
+#header {
+   font-family: Verdana;
+   font-size: 14px;
+   font-weight: bold;
+   flex: 1 1 100%;
+}
+
+#logo {
+   color: MediumAquamarine;
+   margin: auto 0 auto 1%;
+}
+img {
+   align-self: center;
+   flex-grow: 0;
+
+}
+
+nav {
+   display: inline-flex;
+  flex-direction: row;
+   text-align: right;
+   justify-content: space-between;
+   margin: auto 10% 5% auto;
+}
+
+
+nav p a {
+   color: gray;
+   padding: 10px;
+}
+
+/*content area*/
+
+.article {
+   padding: 10px 0px;
+   display: flex;
+}
+.columnwrapper {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 115px;
+}
+.column {
+   display: flex;
+   flex-direction: column!important;
+   border: 1px solid black;
+   margin-right: 32px;
+}
+
+.column.large {
+   width: 630px;
+   border: 1px solid black;
+   order: 1;
+   display: flex;
+   flex-wrap: wrap;
+}
+.column.mid {
+   width: 300px;
+   order: 2;
+}
+
+.column.small {
+   width: 240px;
+   order: 3;
+}
+
+.content {
+   background-color: orange;
+   font-family: Georgia;
+   font-size: 17px;
+   color: black;
+   border: 1px black solid;
+}
+
+.subar {
+   display: flex;
+   max-width: 50%;
+   flex-flow: column;
+   min-width: 40%;
+   flex: 1 1;
+}
+.subarwrapper {
+   display: flex;
+   flex-wrap: wrap;
+   flex: 1 1 100%;
+   justify-content: space-between;
+}
+
+/*images and ordering*/
+
+.imagecontent {
+   font-family: Georgia;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+   text-align: center;
+}
+
+#mainline {
+   font-size: 40px!important;
+   background-image: url("./Images/img-story-main.png");
+   width: 100%;
+   height: 300px;
+   display: flex;
+   order: 1;
+}
+
+#article2 {
+   order: 2;
+}
+
+#article3 {
+   order: 3;
+}
+
+
+#earth {
+   background-image: url("./Images/img-story-2.png");
+   width: 100%;
+   height: 300px;
+   order: 4;
+}
+
+#camera {
+   background-image: url("./Images/img-story-3.png");
+   width: 100%;
+   height: 300px;
+   order: 5;
+}
+
+#cats {
+   background-image: url("./Images/img-story-1.png");
+   width: 100%;
+   height: 300px!important;
+   display: flex;
+}
+
+#badcookie {
+   display: flex;
+   width: 100%;
+}
